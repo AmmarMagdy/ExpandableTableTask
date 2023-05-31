@@ -9,7 +9,7 @@ import Alamofire
 
 class Request {
     
-    static func sendRequest<T: Decodable>(_ router: Router, success: @escaping(BaseResponse<T>) -> Void, failure: @escaping(Error?) -> Void) {
+    func sendRequest<T: Decodable>(_ router: Router, success: @escaping(BaseResponse<T>) -> Void, failure: @escaping(Error?) -> Void) {
         
         if !Connectivity.isConnectedToInternet() {
             print("Please check your internet connection")

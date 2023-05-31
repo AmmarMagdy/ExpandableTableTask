@@ -5,11 +5,20 @@
 //  Created by Ammar.M on 31/05/2023.
 //
 
-import Foundation
+import UIKit
 
-protocol CommonViewProtocol: NavigationRoute, AnyObject {
+protocol CommonViewProtocol: AnyObject {
     func showLoadingIndicator()
     func hideLoadingIndicator()
-    func showErrorMessage(_ statusCode: Int?, _ message: String?)
-    func showSuccessMessage(_ title: String?, _ message: String)
+}
+
+extension UIViewController: CommonViewProtocol {
+    
+    func showLoadingIndicator() {
+        ActivityIndicator.instance.show(self.view)
+    }
+    
+    func hideLoadingIndicator() {
+        ActivityIndicator.instance.hide()
+    }
 }

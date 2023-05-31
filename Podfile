@@ -7,5 +7,5 @@ target 'ExpandableTableTask' do
 
   # Pods for ExpandableTableTask
   pod 'Alamofire'
-
+  pod 'SnapKit'
 end

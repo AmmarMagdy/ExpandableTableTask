@@ -13,8 +13,6 @@
 		A0F2CCD52A273F390080FA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F2CCD42A273F390080FA7F /* Assets.xcassets */; };
 		A0F2CCD82A273F390080FA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F2CCD62A273F390080FA7F /* LaunchScreen.storyboard */; };
 		A0F2CCE02A2745C40080FA7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCDF2A2745C40080FA7F /* SceneDelegate.swift */; };
-		A0F2CCE52A27476D0080FA7F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCE32A27476D0080FA7F /* SplashViewController.swift */; };
-		A0F2CCE62A27476D0080FA7F /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F2CCE42A27476D0080FA7F /* SplashViewController.xib */; };
 		A0F2CCEA2A2748CD0080FA7F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCE92A2748CD0080FA7F /* Request.swift */; };
 		A0F2CCEC2A2749480080FA7F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCEB2A2749480080FA7F /* Router.swift */; };
 		A0F2CCF02A2752750080FA7F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCEF2A2752750080FA7F /* Country.swift */; };
@@ -23,7 +21,7 @@
 		A0F2CCFA2A277B630080FA7F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCF82A277B630080FA7F /* MainScreenViewController.swift */; };
 		A0F2CCFB2A277B630080FA7F /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F2CCF92A277B630080FA7F /* MainScreenViewController.xib */; };
 		A0F2CCFF2A277C380080FA7F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCFE2A277C380080FA7F /* UIViewController+Extension.swift */; };
-		A0F2CD022A277C8A0080FA7F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CD012A277C8A0080FA7F /* Route.swift */; };
+		A0F2CD082A2784DD0080FA7F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CD072A2784DD0080FA7F /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +35,6 @@
 		A0F2CCD72A273F390080FA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0F2CCD92A273F390080FA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0F2CCDF2A2745C40080FA7F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0F2CCE32A27476D0080FA7F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		A0F2CCE42A27476D0080FA7F /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		A0F2CCE92A2748CD0080FA7F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A0F2CCEB2A2749480080FA7F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A0F2CCEF2A2752750080FA7F /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -47,7 +43,7 @@
 		A0F2CCF82A277B630080FA7F /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		A0F2CCF92A277B630080FA7F /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
 		A0F2CCFE2A277C380080FA7F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		A0F2CD012A277C8A0080FA7F /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		A0F2CD072A2784DD0080FA7F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +99,6 @@
 				A0F2CCE12A2747470080FA7F /* Modules */,
 				A0F2CCE72A2748930080FA7F /* Gateways */,
 				A0F2CCFC2A277BC80080FA7F /* Helpers */,
-				A0F2CD002A277C5C0080FA7F /* Components */,
 				A0F2CCCB2A273F360080FA7F /* AppDelegate.swift */,
 				A0F2CCDF2A2745C40080FA7F /* SceneDelegate.swift */,
 				A0F2CCCF2A273F360080FA7F /* ViewController.swift */,
@@ -117,19 +112,9 @@
 		A0F2CCE12A2747470080FA7F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A0F2CCE22A2747540080FA7F /* Splash */,
 				A0F2CCED2A27511A0080FA7F /* MainScreen */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		A0F2CCE22A2747540080FA7F /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				A0F2CCE32A27476D0080FA7F /* SplashViewController.swift */,
-				A0F2CCE42A27476D0080FA7F /* SplashViewController.xib */,
-			);
-			path = Splash;
 			sourceTree = "<group>";
 		};
 		A0F2CCE72A2748930080FA7F /* Gateways */ = {
@@ -188,6 +173,7 @@
 		A0F2CCFC2A277BC80080FA7F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A0F2CD062A2784D10080FA7F /* Utilis */,
 				A0F2CCFD2A277BD10080FA7F /* Extensions */,
 			);
 			path = Helpers;
@@ -201,12 +187,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A0F2CD002A277C5C0080FA7F /* Components */ = {
+		A0F2CD062A2784D10080FA7F /* Utilis */ = {
 			isa = PBXGroup;
 			children = (
-				A0F2CD012A277C8A0080FA7F /* Route.swift */,
+				A0F2CD072A2784DD0080FA7F /* ActivityIndicator.swift */,
 			);
-			path = Components;
+			path = Utilis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +257,6 @@
 			files = (
 				A0F2CCD82A273F390080FA7F /* LaunchScreen.storyboard in Resources */,
 				A0F2CCFB2A277B630080FA7F /* MainScreenViewController.xib in Resources */,
-				A0F2CCE62A27476D0080FA7F /* SplashViewController.xib in Resources */,
 				A0F2CCD52A273F390080FA7F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,14 +313,13 @@
 				A0F2CCD02A273F360080FA7F /* ViewController.swift in Sources */,
 				A0F2CCFF2A277C380080FA7F /* UIViewController+Extension.swift in Sources */,
 				A0F2CCCC2A273F360080FA7F /* AppDelegate.swift in Sources */,
+				A0F2CD082A2784DD0080FA7F /* ActivityIndicator.swift in Sources */,
 				A0F2CCF62A277AF10080FA7F /* MainScreenPresenter.swift in Sources */,
 				A0F2CCEA2A2748CD0080FA7F /* Request.swift in Sources */,
 				A0F2CCE02A2745C40080FA7F /* SceneDelegate.swift in Sources */,
 				A0F2CCFA2A277B630080FA7F /* MainScreenViewController.swift in Sources */,
 				A0F2CCEC2A2749480080FA7F /* Router.swift in Sources */,
 				A0F2CCF02A2752750080FA7F /* Country.swift in Sources */,
-				A0F2CD022A277C8A0080FA7F /* Route.swift in Sources */,
-				A0F2CCE52A27476D0080FA7F /* SplashViewController.swift in Sources */,
 				A0F2CCF22A2753320080FA7F /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

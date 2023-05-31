@@ -50,10 +50,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 extension SceneDelegate {
     func openSplashViewController(windowScene: UIWindowScene) {
-        let navigationController = UINavigationController(rootViewController: SplashViewController())
-        navigationController.navigationBar.isHidden = true
+        let viewController = MainScreenViewController()
+        viewController.presenter = MainScreenPresenter(view: viewController)
+        viewController.navigationController?.navigationBar.isHidden = true
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = navigationController
+        window.rootViewController = viewController
         self.window = window
         window.makeKeyAndVisible()
     }
