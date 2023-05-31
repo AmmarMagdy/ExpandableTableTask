@@ -10,6 +10,6 @@ import Foundation
 // MARK: - BaseResponse
 struct BaseResponse<T: Decodable>: Decodable {
     let success: Bool
-    let data: [T]
+    let data: T
     let message: String
 }
