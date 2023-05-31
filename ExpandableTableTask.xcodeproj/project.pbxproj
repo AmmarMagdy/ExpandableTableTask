@@ -17,6 +17,8 @@
 		A0F2CCE62A27476D0080FA7F /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F2CCE42A27476D0080FA7F /* SplashViewController.xib */; };
 		A0F2CCEA2A2748CD0080FA7F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCE92A2748CD0080FA7F /* Request.swift */; };
 		A0F2CCEC2A2749480080FA7F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCEB2A2749480080FA7F /* Router.swift */; };
+		A0F2CCF02A2752750080FA7F /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCEF2A2752750080FA7F /* Countries.swift */; };
+		A0F2CCF22A2753320080FA7F /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCF12A2753320080FA7F /* BaseResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		A0F2CCE42A27476D0080FA7F /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		A0F2CCE92A2748CD0080FA7F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A0F2CCEB2A2749480080FA7F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A0F2CCEF2A2752750080FA7F /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		A0F2CCF12A2753320080FA7F /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F2CCE22A2747540080FA7F /* Splash */,
+				A0F2CCED2A27511A0080FA7F /* MainScreen */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -126,10 +131,27 @@
 		A0F2CCE82A2748C00080FA7F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A0F2CCF12A2753320080FA7F /* BaseResponse.swift */,
 				A0F2CCE92A2748CD0080FA7F /* Request.swift */,
 				A0F2CCEB2A2749480080FA7F /* Router.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A0F2CCED2A27511A0080FA7F /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A0F2CCEE2A2752600080FA7F /* Model */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		A0F2CCEE2A2752600080FA7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0F2CCEF2A2752750080FA7F /* Countries.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +274,9 @@
 				A0F2CCEA2A2748CD0080FA7F /* Request.swift in Sources */,
 				A0F2CCE02A2745C40080FA7F /* SceneDelegate.swift in Sources */,
 				A0F2CCEC2A2749480080FA7F /* Router.swift in Sources */,
+				A0F2CCF02A2752750080FA7F /* Countries.swift in Sources */,
 				A0F2CCE52A27476D0080FA7F /* SplashViewController.swift in Sources */,
+				A0F2CCF22A2753320080FA7F /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

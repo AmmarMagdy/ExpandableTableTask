@@ -9,12 +9,12 @@ import Alamofire
 
 class Request {
     
-    func sendRequest<T: Decodable>(_ router: Router, success: @escaping(T) -> Void, failure: @escaping(Error?) -> Void) {
+    func sendRequest<T: Decodable>(_ router: Router, success: @escaping(BaseResponse<T>) -> Void, failure: @escaping(Error?) -> Void) {
         
         if !Connectivity.isConnectedToInternet() {
             print("Please check your internet connection")
         } else {
-            AF.request(router).responseDecodable(of: T.self) { (response) in
+            AF.request(router).responseDecodable(of: BaseResponse<T>.self) { (response) in
                 print(response.debugDescription)
                 switch response.result {
                 case .success(let result):
