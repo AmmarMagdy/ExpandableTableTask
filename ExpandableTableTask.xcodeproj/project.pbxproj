@@ -15,6 +15,8 @@
 		A0F2CCE02A2745C40080FA7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCDF2A2745C40080FA7F /* SceneDelegate.swift */; };
 		A0F2CCE52A27476D0080FA7F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCE32A27476D0080FA7F /* SplashViewController.swift */; };
 		A0F2CCE62A27476D0080FA7F /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F2CCE42A27476D0080FA7F /* SplashViewController.xib */; };
+		A0F2CCEA2A2748CD0080FA7F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCE92A2748CD0080FA7F /* Request.swift */; };
+		A0F2CCEC2A2749480080FA7F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCEB2A2749480080FA7F /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A0F2CCDF2A2745C40080FA7F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A0F2CCE32A27476D0080FA7F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A0F2CCE42A27476D0080FA7F /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		A0F2CCE92A2748CD0080FA7F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		A0F2CCEB2A2749480080FA7F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F2CCE12A2747470080FA7F /* Modules */,
+				A0F2CCE72A2748930080FA7F /* Gateways */,
 				A0F2CCCB2A273F360080FA7F /* AppDelegate.swift */,
 				A0F2CCDF2A2745C40080FA7F /* SceneDelegate.swift */,
 				A0F2CCCF2A273F360080FA7F /* ViewController.swift */,
@@ -110,6 +115,23 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		A0F2CCE72A2748930080FA7F /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				A0F2CCE82A2748C00080FA7F /* Network */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		A0F2CCE82A2748C00080FA7F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0F2CCE92A2748CD0080FA7F /* Request.swift */,
+				A0F2CCEB2A2749480080FA7F /* Router.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +143,7 @@
 				A0F2CCC42A273F360080FA7F /* Sources */,
 				A0F2CCC52A273F360080FA7F /* Frameworks */,
 				A0F2CCC62A273F360080FA7F /* Resources */,
+				58272A33A425EE8E3AFAB263 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +201,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		58272A33A425EE8E3AFAB263 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExpandableTableTask/Pods-ExpandableTableTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExpandableTableTask/Pods-ExpandableTableTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExpandableTableTask/Pods-ExpandableTableTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5D7C9AB78CC661C5F87F1205 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,7 +249,9 @@
 			files = (
 				A0F2CCD02A273F360080FA7F /* ViewController.swift in Sources */,
 				A0F2CCCC2A273F360080FA7F /* AppDelegate.swift in Sources */,
+				A0F2CCEA2A2748CD0080FA7F /* Request.swift in Sources */,
 				A0F2CCE02A2745C40080FA7F /* SceneDelegate.swift in Sources */,
+				A0F2CCEC2A2749480080FA7F /* Router.swift in Sources */,
 				A0F2CCE52A27476D0080FA7F /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

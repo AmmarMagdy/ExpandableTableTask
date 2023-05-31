@@ -6,5 +6,6 @@ target 'ExpandableTableTask' do
   use_frameworks!
 
   # Pods for ExpandableTableTask
+  pod 'Alamofire'
 
 end
