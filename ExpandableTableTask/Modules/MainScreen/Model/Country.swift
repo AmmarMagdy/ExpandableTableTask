@@ -8,9 +8,17 @@
 import Foundation
 
 struct CommonData: Decodable {
+    
     var id: Int
     var title: String
     var status: Int
+    var isOpend = false
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case status
+    }
 }
 
 // MARK: - Countries

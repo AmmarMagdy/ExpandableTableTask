@@ -22,6 +22,10 @@
 		A0F2CCFB2A277B630080FA7F /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F2CCF92A277B630080FA7F /* MainScreenViewController.xib */; };
 		A0F2CCFF2A277C380080FA7F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CCFE2A277C380080FA7F /* UIViewController+Extension.swift */; };
 		A0F2CD082A2784DD0080FA7F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CD072A2784DD0080FA7F /* ActivityIndicator.swift */; };
+		A0F2CD0C2A27D1FC0080FA7F /* CountryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CD0A2A27D1FC0080FA7F /* CountryTableCell.swift */; };
+		A0F2CD0D2A27D1FC0080FA7F /* CountryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F2CD0B2A27D1FC0080FA7F /* CountryTableCell.xib */; };
+		A0F2CD0F2A27D2C30080FA7F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CD0E2A27D2C30080FA7F /* UIView+Extension.swift */; };
+		A0F2CD112A27DB4D0080FA7F /* CountryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2CD102A27DB4D0080FA7F /* CountryPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		A0F2CCF92A277B630080FA7F /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
 		A0F2CCFE2A277C380080FA7F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A0F2CD072A2784DD0080FA7F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		A0F2CD0A2A27D1FC0080FA7F /* CountryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableCell.swift; sourceTree = "<group>"; };
+		A0F2CD0B2A27D1FC0080FA7F /* CountryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableCell.xib; sourceTree = "<group>"; };
+		A0F2CD0E2A27D2C30080FA7F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A0F2CD102A27DB4D0080FA7F /* CountryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				A0F2CCEE2A2752600080FA7F /* Model */,
-				A0F2CCF72A277B3D0080FA7F /* ViewController */,
 				A0F2CCF42A277AB60080FA7F /* Presenter */,
+				A0F2CCF72A277B3D0080FA7F /* ViewController */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F2CCF52A277AF10080FA7F /* MainScreenPresenter.swift */,
+				A0F2CD102A27DB4D0080FA7F /* CountryPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 			children = (
 				A0F2CCF82A277B630080FA7F /* MainScreenViewController.swift */,
 				A0F2CCF92A277B630080FA7F /* MainScreenViewController.xib */,
+				A0F2CD092A27D1D80080FA7F /* Cell */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -183,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F2CCFE2A277C380080FA7F /* UIViewController+Extension.swift */,
+				A0F2CD0E2A27D2C30080FA7F /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,6 +204,15 @@
 				A0F2CD072A2784DD0080FA7F /* ActivityIndicator.swift */,
 			);
 			path = Utilis;
+			sourceTree = "<group>";
+		};
+		A0F2CD092A27D1D80080FA7F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0F2CD0A2A27D1FC0080FA7F /* CountryTableCell.swift */,
+				A0F2CD0B2A27D1FC0080FA7F /* CountryTableCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F2CCD82A273F390080FA7F /* LaunchScreen.storyboard in Resources */,
+				A0F2CD0D2A27D1FC0080FA7F /* CountryTableCell.xib in Resources */,
 				A0F2CCFB2A277B630080FA7F /* MainScreenViewController.xib in Resources */,
 				A0F2CCD52A273F390080FA7F /* Assets.xcassets in Resources */,
 			);
@@ -311,6 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F2CCD02A273F360080FA7F /* ViewController.swift in Sources */,
+				A0F2CD0F2A27D2C30080FA7F /* UIView+Extension.swift in Sources */,
+				A0F2CD0C2A27D1FC0080FA7F /* CountryTableCell.swift in Sources */,
 				A0F2CCFF2A277C380080FA7F /* UIViewController+Extension.swift in Sources */,
 				A0F2CCCC2A273F360080FA7F /* AppDelegate.swift in Sources */,
 				A0F2CD082A2784DD0080FA7F /* ActivityIndicator.swift in Sources */,
@@ -319,6 +342,7 @@
 				A0F2CCE02A2745C40080FA7F /* SceneDelegate.swift in Sources */,
 				A0F2CCFA2A277B630080FA7F /* MainScreenViewController.swift in Sources */,
 				A0F2CCEC2A2749480080FA7F /* Router.swift in Sources */,
+				A0F2CD112A27DB4D0080FA7F /* CountryPresenter.swift in Sources */,
 				A0F2CCF02A2752750080FA7F /* Country.swift in Sources */,
 				A0F2CCF22A2753320080FA7F /* BaseResponse.swift in Sources */,
 			);
@@ -460,6 +484,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExpandableTableTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -489,6 +514,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExpandableTableTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

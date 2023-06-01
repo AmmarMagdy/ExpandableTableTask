@@ -56,6 +56,7 @@ extension SceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = viewController
         self.window = window
+        window.overrideUserInterfaceStyle = .light
         window.makeKeyAndVisible()
     }
 }

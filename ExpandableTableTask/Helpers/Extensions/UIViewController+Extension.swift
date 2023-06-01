@@ -14,6 +14,7 @@ protocol CommonViewProtocol: AnyObject {
 
 extension UIViewController: CommonViewProtocol {
     
+    
     func showLoadingIndicator() {
         ActivityIndicator.instance.show(self.view)
     }
@@ -22,3 +23,18 @@ extension UIViewController: CommonViewProtocol {
         ActivityIndicator.instance.hide()
     }
 }
+
+class DynamicHeightTableView: UITableView {
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if !__CGSizeEqualToSize(bounds.size, self.intrinsicContentSize) {
+            self.invalidateIntrinsicContentSize()
+        }
+    }
+    
+    override var intrinsicContentSize: CGSize {
+        return contentSize
+    }
+}
+
